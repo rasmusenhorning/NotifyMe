@@ -14,6 +14,7 @@
 		4CA1051D1ED6F3B600A96B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA1051B1ED6F3B600A96B8D /* LaunchScreen.storyboard */; };
 		4CA105281ED6F3B600A96B8D /* NotifyMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105271ED6F3B600A96B8D /* NotifyMeTests.swift */; };
 		4CA105331ED6F3B600A96B8D /* NotifyMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105321ED6F3B600A96B8D /* NotifyMeUITests.swift */; };
+		4CA105411ED6F97100A96B8D /* swift.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4CA105401ED6F97100A96B8D /* swift.gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4CA1052E1ED6F3B600A96B8D /* NotifyMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifyMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA105321ED6F3B600A96B8D /* NotifyMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyMeUITests.swift; sourceTree = "<group>"; };
 		4CA105341ED6F3B600A96B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA105401ED6F97100A96B8D /* swift.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swift.gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		4CA105061ED6F3B600A96B8D = {
 			isa = PBXGroup;
 			children = (
+				4CA105401ED6F97100A96B8D /* swift.gitignore */,
 				4CA105111ED6F3B600A96B8D /* NotifyMe */,
 				4CA105261ED6F3B600A96B8D /* NotifyMeTests */,
 				4CA105311ED6F3B600A96B8D /* NotifyMeUITests */,
@@ -237,6 +240,7 @@
 			files = (
 				4CA1051D1ED6F3B600A96B8D /* LaunchScreen.storyboard in Resources */,
 				4CA1051A1ED6F3B600A96B8D /* Assets.xcassets in Resources */,
+				4CA105411ED6F97100A96B8D /* swift.gitignore in Resources */,
 				4CA105181ED6F3B600A96B8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
