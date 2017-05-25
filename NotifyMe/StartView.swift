@@ -10,11 +10,12 @@ import Foundation
 import UIKit
 
 class StartView: UIView {
-    
-    override init(frame: CGRect) {
-        super.init(frame : frame)
-        super.backgroundColor = UIColor.white
-    }
+	
+	init(frame: CGRect, table: UITableView) {
+		super.init(frame : frame)
+		super.backgroundColor = UIColor.white
+		super.addSubview(table)
+	}
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

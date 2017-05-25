@@ -10,9 +10,14 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+	var table: OptionsTableViewController?
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view = StartView(frame : self.view.frame)
+		SizeConstants.shared.navigationBarMargin = (navigationController?.navigationBar.frame.height)! + UIApplication.shared.statusBarFrame.height
+		self.table = OptionsTableViewController(style: UITableViewStyle.plain)
+		self.table?.tableView.frame = CGRect(x:0,y:SizeConstants.shared.navigationBarMargin,width:UIScreen.main.bounds.width,height:UIScreen.main.bounds.height - SizeConstants.shared.navigationBarMargin)
+        self.view = StartView(frame: self.view.frame,table: (self.table?.tableView)!)
     }
 
     override func didReceiveMemoryWarning() {

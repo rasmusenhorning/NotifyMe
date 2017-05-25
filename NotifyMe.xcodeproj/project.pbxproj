@@ -22,6 +22,15 @@
 		4CA105561ED709A100A96B8D /* StartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105551ED709A100A96B8D /* StartModel.swift */; };
 		4CA105571ED709A100A96B8D /* StartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105551ED709A100A96B8D /* StartModel.swift */; };
 		4CA105581ED709A100A96B8D /* StartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105551ED709A100A96B8D /* StartModel.swift */; };
+		4CA1055E1ED7271B00A96B8D /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1055D1ED7271B00A96B8D /* OptionsTableViewController.swift */; };
+		4CA1055F1ED7271B00A96B8D /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1055D1ED7271B00A96B8D /* OptionsTableViewController.swift */; };
+		4CA105601ED7271B00A96B8D /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA1055D1ED7271B00A96B8D /* OptionsTableViewController.swift */; };
+		4CA105621ED7289D00A96B8D /* OptionsTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105611ED7289D00A96B8D /* OptionsTableModel.swift */; };
+		4CA105631ED7289D00A96B8D /* OptionsTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105611ED7289D00A96B8D /* OptionsTableModel.swift */; };
+		4CA105641ED7289D00A96B8D /* OptionsTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105611ED7289D00A96B8D /* OptionsTableModel.swift */; };
+		4CA105671ED7332F00A96B8D /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105661ED7332F00A96B8D /* SizeConstants.swift */; };
+		4CA105681ED7332F00A96B8D /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105661ED7332F00A96B8D /* SizeConstants.swift */; };
+		4CA105691ED7332F00A96B8D /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105661ED7332F00A96B8D /* SizeConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +63,12 @@
 		4CA1052E1ED6F3B600A96B8D /* NotifyMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifyMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA105321ED6F3B600A96B8D /* NotifyMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyMeUITests.swift; sourceTree = "<group>"; };
 		4CA105341ED6F3B600A96B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CA105451ED7054800A96B8D /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		4CA105491ED706D800A96B8D /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
-		4CA105551ED709A100A96B8D /* StartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModel.swift; sourceTree = "<group>"; };
+		4CA105451ED7054800A96B8D /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
+		4CA105491ED706D800A96B8D /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; usesTabs = 1; };
+		4CA105551ED709A100A96B8D /* StartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartModel.swift; sourceTree = "<group>"; usesTabs = 1; };
+		4CA1055D1ED7271B00A96B8D /* OptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
+		4CA105611ED7289D00A96B8D /* OptionsTableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableModel.swift; sourceTree = "<group>"; };
+		4CA105661ED7332F00A96B8D /* SizeConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,7 @@
 		4CA105111ED6F3B600A96B8D /* NotifyMe */ = {
 			isa = PBXGroup;
 			children = (
+				4CA105651ED7330E00A96B8D /* Constants */,
 				4CA105441ED7005100A96B8D /* Controllers */,
 				4CA105431ED7004000A96B8D /* Views */,
 				4CA105421ED7003500A96B8D /* Models */,
@@ -141,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				4CA105551ED709A100A96B8D /* StartModel.swift */,
+				4CA105611ED7289D00A96B8D /* OptionsTableModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -157,8 +171,17 @@
 			isa = PBXGroup;
 			children = (
 				4CA105451ED7054800A96B8D /* StartViewController.swift */,
+				4CA1055D1ED7271B00A96B8D /* OptionsTableViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4CA105651ED7330E00A96B8D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4CA105661ED7332F00A96B8D /* SizeConstants.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +321,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA1055E1ED7271B00A96B8D /* OptionsTableViewController.swift in Sources */,
 				4CA1054A1ED706D800A96B8D /* StartView.swift in Sources */,
 				4CA105131ED6F3B600A96B8D /* AppDelegate.swift in Sources */,
+				4CA105621ED7289D00A96B8D /* OptionsTableModel.swift in Sources */,
+				4CA105671ED7332F00A96B8D /* SizeConstants.swift in Sources */,
 				4CA105561ED709A100A96B8D /* StartModel.swift in Sources */,
 				4CA105461ED7054800A96B8D /* StartViewController.swift in Sources */,
 			);
@@ -309,8 +335,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA1055F1ED7271B00A96B8D /* OptionsTableViewController.swift in Sources */,
 				4CA1054B1ED706D800A96B8D /* StartView.swift in Sources */,
 				4CA105281ED6F3B600A96B8D /* NotifyMeTests.swift in Sources */,
+				4CA105631ED7289D00A96B8D /* OptionsTableModel.swift in Sources */,
+				4CA105681ED7332F00A96B8D /* SizeConstants.swift in Sources */,
 				4CA105571ED709A100A96B8D /* StartModel.swift in Sources */,
 				4CA105471ED7054800A96B8D /* StartViewController.swift in Sources */,
 			);
@@ -320,8 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA105601ED7271B00A96B8D /* OptionsTableViewController.swift in Sources */,
 				4CA1054C1ED706D800A96B8D /* StartView.swift in Sources */,
 				4CA105331ED6F3B600A96B8D /* NotifyMeUITests.swift in Sources */,
+				4CA105641ED7289D00A96B8D /* OptionsTableModel.swift in Sources */,
+				4CA105691ED7332F00A96B8D /* SizeConstants.swift in Sources */,
 				4CA105581ED709A100A96B8D /* StartModel.swift in Sources */,
 				4CA105481ED7054800A96B8D /* StartViewController.swift in Sources */,
 			);
