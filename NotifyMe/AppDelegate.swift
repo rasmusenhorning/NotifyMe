@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,14 +16,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let nav1 = UINavigationController()
+        Constants.navigationController = UINavigationController()
         let mainView = StartViewController(nibName: nil, bundle: nil) //ViewController = Name of your controller
-        nav1.viewControllers = [mainView]
-        self.window!.rootViewController = nav1
+        Constants.navigationController?.viewControllers = [mainView]
+        self.window!.rootViewController = Constants.navigationController
         self.window?.makeKeyAndVisible()
+        
+        
         return true
+    }
+    
+    func application(application: UIApplication,
+                     openURL url: NSURL,
+                     sourceApplication: String?,
+                     annotation: AnyObject?) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(
+            application,
+            open: url as URL!,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

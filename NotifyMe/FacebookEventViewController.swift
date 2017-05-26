@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import FBSDKCoreKit
 
 class FacebookEventViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view = FacebookEventView(frame: self.view.frame)
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func getFacebookEvent(){
+        
     }
     
 

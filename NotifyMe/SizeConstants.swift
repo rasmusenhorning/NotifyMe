@@ -15,4 +15,6 @@ class SizeConstants{
     static let shared = SizeConstants()
     
     var navigationBarMargin: CGFloat = CGFloat(0)
+    let widthMargin: CGFloat = CGFloat(5)
+    let heightMargin: CGFloat = CGFloat(5)
 }

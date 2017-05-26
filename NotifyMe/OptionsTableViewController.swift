@@ -51,7 +51,13 @@ class OptionsTableViewController: UITableViewController {
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: true)
-		
+		switch indexPath.row{
+		case 0:
+			Constants.navigationController?.pushViewController(FacebookLoginViewController(), animated: true)
+			break
+		default:
+			break
+		}
 	}
 	
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -11,6 +11,12 @@
 		49B9218880CF71CB2F7411A1 /* Pods_NotifyMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B3706408C673290403CEE2 /* Pods_NotifyMeTests.framework */; };
 		4C61F2201ED8143E0050B298 /* FacebookEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61F21F1ED8143E0050B298 /* FacebookEventView.swift */; };
 		4C61F2211ED8143E0050B298 /* FacebookEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61F21F1ED8143E0050B298 /* FacebookEventView.swift */; };
+		4C61F2271ED826130050B298 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61F2261ED826130050B298 /* Constants.swift */; };
+		4C61F2281ED826130050B298 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61F2261ED826130050B298 /* Constants.swift */; };
+		4C61F2291ED826130050B298 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61F2261ED826130050B298 /* Constants.swift */; };
+		4C61F22B1ED8341A0050B298 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61F22A1ED8341A0050B298 /* FacebookLoginViewController.swift */; };
+		4C61F22C1ED8341A0050B298 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61F22A1ED8341A0050B298 /* FacebookLoginViewController.swift */; };
+		4C61F22D1ED8341A0050B298 /* FacebookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61F22A1ED8341A0050B298 /* FacebookLoginViewController.swift */; };
 		4CA105131ED6F3B600A96B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA105121ED6F3B600A96B8D /* AppDelegate.swift */; };
 		4CA105181ED6F3B600A96B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA105161ED6F3B600A96B8D /* Main.storyboard */; };
 		4CA1051A1ED6F3B600A96B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA105191ED6F3B600A96B8D /* Assets.xcassets */; };
@@ -61,6 +67,8 @@
 /* Begin PBXFileReference section */
 		13B3706408C673290403CEE2 /* Pods_NotifyMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotifyMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C61F21F1ED8143E0050B298 /* FacebookEventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookEventView.swift; sourceTree = "<group>"; };
+		4C61F2261ED826130050B298 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4C61F22A1ED8341A0050B298 /* FacebookLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLoginViewController.swift; sourceTree = "<group>"; };
 		4CA1050F1ED6F3B600A96B8D /* NotifyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA105121ED6F3B600A96B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CA105171ED6F3B600A96B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -198,6 +206,7 @@
 				4CA105451ED7054800A96B8D /* StartViewController.swift */,
 				4CA1055D1ED7271B00A96B8D /* OptionsTableViewController.swift */,
 				4CA1056A1ED80D8E00A96B8D /* FacebookEventViewController.swift */,
+				4C61F22A1ED8341A0050B298 /* FacebookLoginViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -206,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				4CA105661ED7332F00A96B8D /* SizeConstants.swift */,
+				4C61F2261ED826130050B298 /* Constants.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -522,6 +532,8 @@
 				4CA105131ED6F3B600A96B8D /* AppDelegate.swift in Sources */,
 				4CA105621ED7289D00A96B8D /* OptionsTableModel.swift in Sources */,
 				4CA105671ED7332F00A96B8D /* SizeConstants.swift in Sources */,
+				4C61F22B1ED8341A0050B298 /* FacebookLoginViewController.swift in Sources */,
+				4C61F2271ED826130050B298 /* Constants.swift in Sources */,
 				4CA1056B1ED80D8E00A96B8D /* FacebookEventViewController.swift in Sources */,
 				4C61F2201ED8143E0050B298 /* FacebookEventView.swift in Sources */,
 				4CA105561ED709A100A96B8D /* StartModel.swift in Sources */,
@@ -535,12 +547,14 @@
 			files = (
 				4CA1055F1ED7271B00A96B8D /* OptionsTableViewController.swift in Sources */,
 				4CA1054B1ED706D800A96B8D /* StartView.swift in Sources */,
+				4C61F22C1ED8341A0050B298 /* FacebookLoginViewController.swift in Sources */,
 				4CA105281ED6F3B600A96B8D /* NotifyMeTests.swift in Sources */,
 				4CA105631ED7289D00A96B8D /* OptionsTableModel.swift in Sources */,
 				4CA105681ED7332F00A96B8D /* SizeConstants.swift in Sources */,
 				4CA1056C1ED80D8E00A96B8D /* FacebookEventViewController.swift in Sources */,
 				4CA105571ED709A100A96B8D /* StartModel.swift in Sources */,
 				4CA105471ED7054800A96B8D /* StartViewController.swift in Sources */,
+				4C61F2281ED826130050B298 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +567,8 @@
 				4CA105331ED6F3B600A96B8D /* NotifyMeUITests.swift in Sources */,
 				4CA105641ED7289D00A96B8D /* OptionsTableModel.swift in Sources */,
 				4CA105691ED7332F00A96B8D /* SizeConstants.swift in Sources */,
+				4C61F22D1ED8341A0050B298 /* FacebookLoginViewController.swift in Sources */,
+				4C61F2291ED826130050B298 /* Constants.swift in Sources */,
 				4CA1056D1ED80D8E00A96B8D /* FacebookEventViewController.swift in Sources */,
 				4C61F2211ED8143E0050B298 /* FacebookEventView.swift in Sources */,
 				4CA105581ED709A100A96B8D /* StartModel.swift in Sources */,
