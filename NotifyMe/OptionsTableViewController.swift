@@ -24,6 +24,7 @@ class OptionsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "optionIdentifier")
+		self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -48,6 +49,10 @@ class OptionsTableViewController: UITableViewController {
         return 2
     }
 
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.deselectRow(at: indexPath, animated: true)
+		
+	}
 	
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "optionIdentifier", for: indexPath)
